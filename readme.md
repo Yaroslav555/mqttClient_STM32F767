@@ -1,4 +1,4 @@
-## About project
+# About project
 
 Simple project of mqtt client for STM32F767. 
 Based on:
@@ -7,9 +7,9 @@ Based on:
 - LWIP 2.1.2 
 - MBEDTLS 2.16.2
 
-## Mosquitto config
+# Mosquitto config
 
-# MQTT over TLS/SSL
+## MQTT over TLS/SSL
 
 listener 8883
 protocol mqtt
@@ -17,17 +17,19 @@ cafile "Path to cert folder"\rootCA.crt
 certfile "Path to cert folder"\server.crt
 keyfile "Path to cert folder"\server.key 
 
-## Functionality
+# Functionality
 
 Just connect with TLS 1.2 to broker by IPv4 and send messages.
 
-## ToDo
+# ToDo
 MqttClient_t class:
  - write mechanism for incomming mqtt telegrams
  - improve logic machine for reconnect and processing network collisions
  - rework mechanism for callbaks
  - DNS name resolving
  
- ![Pin Functions] (Docs/cube.png)
- ![Console output] (Docs/mosquitto.png)
- ![Wireshark output] (Docs/wireshark.png)
+ ![Pin Functions] (Doc/cube.png)
+ 
+ ![Console output] (Doc/mosquitto.png)
+ 
+ ![Wireshark output] (Doc/wireshark.png)
