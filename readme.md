@@ -28,8 +28,9 @@ MqttClient_t class:
  - rework mechanism for callbaks
  - DNS name resolving
  
- ![Pin Functions] (Doc/cube.png)
  
- ![Console output] (Doc/mosquitto.png)
+ ![Pin Functions](Doc/cube.png)
  
- ![Wireshark output] (Doc/wireshark.png)
+ ![Console output](Doc/mosquitto.png)
+ 
+ ![Wireshark output](Doc/wireshark.png)
