@@ -9,13 +9,22 @@ Based on:
 
 # Mosquitto config
 
-## MQTT over TLS/SSL
-
+```
+# MQTT over TLS/SSL
 listener 8883
 protocol mqtt
 cafile "Path to cert folder"\rootCA.crt
 certfile "Path to cert folder"\server.crt
 keyfile "Path to cert folder"\server.key 
+```
+- server launch:
+```
+ mosquitto -v -c "c:\Program Files\mosquitto\mosquitto.conf"
+```
+- client launch (for additional monitoring):
+```
+mosquitto_sub -h 192.168.0.99 -p 8883 -t sensor --cafile "Path to cert folder\rootCA.crt" -d
+```
 
 # Functionality
 
